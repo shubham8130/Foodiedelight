@@ -2,25 +2,21 @@
 
 ## Introduction
 
-This assessment demonstrates the creation of a basic Restaurant Management System using React for the frontend, and mockapi.io for the backend API.
+This assessment demonstrates the creation of a basic Restaurant Management System using React for the frontend,
+Used Dummy mock api for reference to show the other way but right now i have used in memory storage and updation .
 
 ## Features
 
 ### 1. Display Restaurants
 
 - **Route**: `http://localhost:3000`
-- **Description**: Displays a list of all available restaurants.
-- **UI Filtration**: Allows users to filter restaurants based on the following criteria:
-  - **Name**: Search by the restaurant's name.
-  - **Description**: Search by the restaurant's description.
-  - **Delivery Mode**: Filter based on the delivery options available.
-  - **Payment Type**: Filter based on the types of payments accepted.
+- **Description**: Displays a list of all available restaurantspted.
 
 ### 2. Add Restaurant
 
 - **Popup Form**: A popup form is provided to add a new restaurant.
 - **Validation**: The form includes required field validation to ensure that all necessary information is provided.
-- **Fields**: Includes fields for the restaurant's name, description, delivery mode, and payment type.
+- **Fields**: Includes fields for the restaurant's name, description,location
 
 ### 3. Edit Restaurant
 
@@ -33,25 +29,23 @@ This assessment demonstrates the creation of a basic Restaurant Management Syste
 
 ## Implementation Details
 
-### Backend (mockapi.io)
+### Backend (mockapi.io) Dummy End Points Displayed
 
 - **API Endpoints**: 
   - **GET /restaurants**: Fetch all restaurants.
   - **POST /restaurants**: Add a new restaurant.
   - **PUT /restaurants/:id**: Edit an existing restaurant.
   - **DELETE /restaurants/:id**: Delete a restaurant.
-- **Data Management**: Uses mockapi.io to simulate a backend API for handling restaurant data.
+
 
 ### Frontend (React)
 
 - **UI Components**:
-  - **RestaurantList**: Displays the list of restaurants with filters.
-  - **AddRestaurant**: Popup form to add a new restaurant.
-  - **EditRestaurant**: Popup form to edit an existing restaurant.
-  - **DeleteRestaurant**: Functionality to delete a restaurant.
+  - **RestaurantTable**: Displays the list of restaurants with filters.
+  - **Restaurant Admin**: Popup form to add a new restaurant.
 - **State Management**: State is managed using React's `useState` and `useEffect` hooks.
 - **Validation**: Form validation is implemented to ensure required fields are filled out.
 
 ## Conclusion
 
-The Restaurant Management System provides a basic yet functional interface for managing restaurant data. Users can view, add, edit, and delete restaurant information with ease, utilizing the filtering options to find specific restaurants based on various criteria. The use of React, mockapi.io ensures a robust and scalable application.
+The Restaurant Management System provides a basic yet functional interface for managing restaurant data. Users can view, add, edit, and delete restaurant information with ease, utilizing the filtering options to find specific restaurants based on various criteria. The use of React, in memeory storage ensures a robust and scalable application.
